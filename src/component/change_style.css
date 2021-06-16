@@ -1,0 +1,138 @@
+.cover {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: hsla(0, 0%, 10%, 0.705);
+  font-family: Microsoft JhengHei;
+}
+.flowpage {
+  background-color: #faf5ee;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+
+.changepage {
+  width: 100%;
+}
+
+.DisplayLogo {
+  float: left;
+  width: 40%;
+}
+.btn_row button {
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #00bcd5;
+  outline: none;
+}
+.btn_row button:hover {
+  background-color: #00aad5;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.btn_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.color_row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.LogoSize {
+  float: left;
+  width: 40%;
+  margin-top: 10px;
+}
+.logosizeBar {
+  float: left;
+  margin-top: 10px;
+  width: 40%;
+}
+.LogoColor {
+  margin-right: 150px;
+  font-weight: 700;
+  color: hsl(0, 0%, 35%);
+}
+.QRShape {
+  float: left;
+}
+.twitterPicker {
+  margin-top: 30px;
+}
+.botton_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.closePage {
+  border: none;
+  height: 40px;
+  width: 150px;
+  font-family: Microsoft JhengHei;
+  font-size: 1em;
+  background: #db3a34;
+  color: white;
+  border-radius: 6px;
+  margin: 5px;
+}
+.closePage:hover {
+  background: gray;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.closePage.check:hover {
+  background-color: rgb(255, 24, 24);
+}
+@media only screen and (max-width: 1400px) {
+  .flowpage {
+    width: 300px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .flowpage {
+    height: 500px;
+  }
+  .text {
+    width: 20%;
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 310px) {
+  .flowpage {
+    max-width: 94%;
+    height: auto;
+    padding: 2%;
+  }
+  .twitterPicker {
+    max-width: 100%;
+  }
+  .LogoColor {
+    margin-right: 120px;
+  }
+}

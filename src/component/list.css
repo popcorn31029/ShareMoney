@@ -1,0 +1,113 @@
+.QRcode {
+  width: 100%;
+  font-family: Microsoft JhengHei;
+  padding-top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px lightgrey solid;
+  margin-top: 6px;
+}
+
+.QRcodeimg {
+  width: 270px;
+  height: 270px;
+  margin: 0px;
+  padding: 0px;
+}
+.annotation {
+  margin-top: 15px;
+}
+.action {
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 18px;
+  margin-bottom: 2%;
+}
+.noteWrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.text {
+  width: 20%;
+}
+.note {
+  height: 34px;
+  border: 1px hsl(0, 0%, 80%) solid;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  color: hsl(0, 0%, 45%);
+  width: 100%;
+  outline: none;
+}
+.note:focus {
+  border: 2px rgba(255, 119, 114, 0.7) solid;
+}
+.header {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.btnWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.download_btn {
+  border: none;
+  padding: 6px 25px;
+  height: auto;
+  width: 100px;
+  font-family: Microsoft JhengHei;
+  font-size: 1em;
+  /* background: -webkit-linear-gradient(
+    150deg,
+    hsl(34, 100%, 57%),
+    hsl(54, 100%, 62%)
+  ); */
+  background-color: #00bcd5;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  outline: none;
+}
+.download_btn:hover,
+.qrStyle:hover {
+  background-color: #00aad5;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.qrStyle {
+  width: 180px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 1400px) {
+  .text {
+    width: 20%;
+    margin-left: 10%;
+  }
+  .annotation {
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .text {
+    width: 20%;
+    margin-left: 0px;
+  }
+  .annotation {
+    margin-left: 0px;
+  }
+}
